@@ -7,6 +7,7 @@ exports.up = function(knex, Promise) {
     table.string('username')
     table.date('dob')
     table.integer('height_in')
+    table.decimal('neck_in',4,2)
     table.decimal('chest_in', 3, 1)
     table.decimal('waist_in', 3, 1)
     table.decimal('inseam_in', 3, 1)

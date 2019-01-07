@@ -4,6 +4,7 @@ exports.up = function(knex, Promise) {
     table.increments('id')
     table.string('size_listed')
     table.decimal('chest_in', 3, 1)
+    table.decimal('neck_in', 4,2)
     table.decimal('waist_in', 3, 1)
     table.decimal('inseam_in', 3, 1)
     table.decimal('shoe_size_cm', 3, 1)
