@@ -1,0 +1,20 @@
+{
+  "name": "FitFinderBE",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hillrg22/FitFinderBE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hillrg22/FitFinderBE/issues"
+  },
+  "homepage": "https://github.com/hillrg22/FitFinderBE#readme"
+}
