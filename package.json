@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/hillrg22/FitFinderBE/issues"
   },
-  "homepage": "https://github.com/hillrg22/FitFinderBE#readme"
+  "homepage": "https://github.com/hillrg22/FitFinderBE#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
