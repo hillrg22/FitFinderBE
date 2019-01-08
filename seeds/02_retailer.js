@@ -10,16 +10,20 @@ exports.seed = function(knex, Promise) {
         url: 'www.nike.com'
         },
         {id: 2,
-        name: 'Macys',
-        url: 'www.macys.com'
-        },
-        {id: 3,
         name: 'Lucky Brand',
         url: 'www.luckybrand.com'
+        },
+        {id: 3,
+        name: 'Old Navy',
+        url: 'www.oldnavy.com'
         },
         {id: 4,
         name: 'Amazon',
         url: 'www.amazon.com'
+        },
+        {id: 5,
+        name: 'Macys',
+        url: 'www.macys.com'
         }
       ]);
     });
