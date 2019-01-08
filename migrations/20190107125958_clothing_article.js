@@ -2,13 +2,10 @@
 exports.up = function(knex, Promise) {
   return knex.schema.createTable('clothing_article', function (table){
     table.increments('id')
-    table.string('size_listed')
-    table.decimal('chest_in', 3, 1)
-    table.decimal('neck_in', 4,2)
-    table.decimal('waist_in', 3, 1)
-    table.decimal('inseam_in', 3, 1)
-    table.decimal('shoe_size_cm', 3, 1)
-    table.integer('item_type').references('clothing_type.id').unsigned().onDelete('cascade')
+    table.string('name')
+    table.integer('brand_id')
+    table.integer('size_id').references('size.id').unsigned().onDelete('cascade')
+    table.integer('item_type_id').references('clothing_type.id').unsigned().onDelete('cascade')
     table.integer('favorited_by').references('users.id').unsigned().onDelete('cascade')
     table.string('image_url')
   })
