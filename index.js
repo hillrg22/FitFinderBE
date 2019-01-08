@@ -11,19 +11,20 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 
+const clothing_articleRoute = require('./Routes/clothing_articleRoute.js')
 
-
-
+app.use ('/clothing_article', clothing_articleRoute)
 
 app.get('/', (req,res,next) =>{
-  knex('clothing_article')
-    .then(articles =>{
-      res.json({articles:articles})
-    })
-
+  res.send("🦇🦇🦇🦇")
 })
 
-
+app.get('/users', (req,res,next) =>{
+  knex('users')
+    .then(users =>{
+      res.json({users:users})
+    })
+})
 
 
 
