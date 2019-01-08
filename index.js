@@ -4,6 +4,7 @@ const port =  process.env.PORT || 3000
 
 const cors = require('cors')
 const bodyParser = require('body-parser')
+const knex = require('./db/connection')
 
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -15,8 +16,13 @@ app.use(bodyParser.json())
 
 
 app.get('/', (req,res,next) =>{
-  res.send("🦇🦇🦇🦇")
+  knex('clothing_article')
+    .then(articles =>{
+      res.json({articles:articles})
+    })
+
 })
+
 
 
 
