@@ -12,19 +12,16 @@ app.use(bodyParser.json())
 
 
 const clothing_articleRoute = require('./Routes/clothing_articleRoute.js')
+const usersRoute = require('./Routes/usersRoute.js')
+
 
 app.use ('/clothing_article', clothing_articleRoute)
+app.use ('/users', usersRoute)
 
 app.get('/', (req,res,next) =>{
   res.send("🦇🦇🦇🦇")
 })
 
-app.get('/users', (req,res,next) =>{
-  knex('users')
-    .then(users =>{
-      res.json({users:users})
-    })
-})
 
 
 
