@@ -27,12 +27,12 @@ const id = req.params.id
 
 router.post('/', (req,res,next) =>{
   // const body = req.body
-  knex('student')
+  knex('users')
     .insert(req.body)
     .returning('*')
-    .then((student) =>{
-      console.log(student)
-      res.json({student: student})
+    .then((user) =>{
+      console.log(user)
+      res.json({user: user})
     })
 })
 router.put('/:id', (req,res,next) => {
