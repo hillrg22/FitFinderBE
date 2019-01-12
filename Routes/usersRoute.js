@@ -39,23 +39,23 @@ router.put('/:id', (req,res,next) => {
   const id = req.params.id
   const body = req.body
 
-  knex('student')
+  knex('users')
     .where('id', id)
     .update(body)
     .returning('*')
-    .then(updatedStudent =>{
-      res.json({beer: updatedStudent[0]})
+    .then(updatedUser =>{
+      res.json({user: updatedUser[0]})
     })
 })
 
 router.delete('/:id', (req,res,next) => {
   const id = req.params.id
-  knex('student')
+  knex('users')
   .where('id', id)
   .del()
   .returning('*')
-  .then(deletedStudent => {
-    res.json({student:deletedStudent[0]})
+  .then(deletedUser => {
+    res.json({user:deletedUser[0]})
   })
 })
 
