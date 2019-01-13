@@ -12,7 +12,7 @@ router.get('/', (req,res,next) => {
 
 
 router.get('/:id', (req,res,next) =>{
-const id = req.params.id
+  const id = req.params.id
   knex('users')
   .where('id',id)
   .then((user) =>{
@@ -24,6 +24,20 @@ const id = req.params.id
     }
   })
 })
+
+
+router.get('/:id/favorites', (req,res,next) =>{
+  const id = req.params.id
+  knex('users')
+  .select('users.id AS user_id', 'favorites.id AS favorites_id', 'username', 'clothing_article.name', 'clothing_article.brand_id', 'clothing_article.img_url').from('users')
+  .where('users.id', id)
+  .innerJoin('favorites', 'favorites.users_id', 'users.id')
+  .innerJoin('clothing_article', 'favorites.clothing_article_id', 'clothing_article.id')
+  .then(favorite => {
+    res.json({ favorite: favorite})
+  })
+})
+
 
 router.post('/', (req,res,next) =>{
   // const body = req.body
