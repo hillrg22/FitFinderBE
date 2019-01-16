@@ -4,7 +4,7 @@ exports.up = function(knex, Promise) {
     table.increments('id')
     table.string('name')
     table.integer('brand_id').references('brand.id').unsigned().onDelete('cascade')
-    table.integer('clothing_type_id').references('clothing_type.id').unsigned().onDelete('cascade')
+    table.string('clothing_type')
     table.string('img_url')
     table.string('sex')
   })

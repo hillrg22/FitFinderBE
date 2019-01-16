@@ -9,7 +9,6 @@ exports.up = function(knex, Promise) {
   table.decimal('neck_in',4,2)
   table.decimal('chest_in', 4, 2)
   table.decimal('shoe_size_cm', 4, 2)
-  table.integer('clothing_type_id').references('clothing_type.id').unsigned().onDelete('cascade')
   })
 }
 ;

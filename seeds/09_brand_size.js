@@ -14,7 +14,6 @@ exports.seed = function(knex, Promise) {
           inseam_in: null,
           neck_in: null,
           shoe_size_cm: null,
-          clothing_type_id: 1
         },
         {
           id: 2,
@@ -25,7 +24,6 @@ exports.seed = function(knex, Promise) {
           inseam_in: null,
           neck_in: null,
           shoe_size_cm: null,
-          clothing_type_id: 1
         },
         {
           id: 3,
@@ -36,7 +34,6 @@ exports.seed = function(knex, Promise) {
           inseam_in: null,
           neck_in: null,
           shoe_size_cm: null,
-          clothing_type_id: 1
         },
         {
           id: 4,
@@ -47,7 +44,6 @@ exports.seed = function(knex, Promise) {
           inseam_in: null,
           neck_in: null,
           shoe_size_cm: null,
-          clothing_type_id: 1
         },
         {
           id: 5,
@@ -58,7 +54,6 @@ exports.seed = function(knex, Promise) {
           inseam_in: null,
           neck_in: null,
           shoe_size_cm: null,
-          clothing_type_id: 1
         },
         {
           id: 6,
@@ -69,7 +64,6 @@ exports.seed = function(knex, Promise) {
           inseam_in: null,
           neck_in: null,
           shoe_size_cm: null,
-          clothing_type_id: 1
         },
         {
           id: 7,
@@ -80,7 +74,6 @@ exports.seed = function(knex, Promise) {
           inseam_in: null,
           neck_in: null,
           shoe_size_cm: null,
-          clothing_type_id: 1
         },
         {
           id: 8,
@@ -91,7 +84,6 @@ exports.seed = function(knex, Promise) {
           inseam_in: null,
           neck_in: null,
           shoe_size_cm: null,
-          clothing_type_id: 1
         },
         {
           id: 9,
@@ -102,7 +94,6 @@ exports.seed = function(knex, Promise) {
           inseam_in: null,
           neck_in: null,
           shoe_size_cm: null,
-          clothing_type_id: 1
         },
         {
           id: 10,
@@ -113,7 +104,6 @@ exports.seed = function(knex, Promise) {
           inseam_in: null,
           neck_in: null,
           shoe_size_cm: null,
-          clothing_type_id: 1
         },
         {
           id: 11,
@@ -124,7 +114,6 @@ exports.seed = function(knex, Promise) {
           inseam_in: null,
           neck_in: null,
           shoe_size_cm: null,
-          clothing_type_id: 1
         },
         {
           id: 12,
@@ -135,7 +124,6 @@ exports.seed = function(knex, Promise) {
           inseam_in: null,
           neck_in: null,
           shoe_size_cm: null,
-          clothing_type_id: 2
         },
         {
           id: 13,
@@ -146,7 +134,6 @@ exports.seed = function(knex, Promise) {
           inseam_in: null,
           neck_in: null,
           shoe_size_cm: null,
-          clothing_type_id: 2
         },
         {
           id: 14,
@@ -157,7 +144,6 @@ exports.seed = function(knex, Promise) {
           inseam_in: null,
           neck_in: null,
           shoe_size_cm: null,
-          clothing_type_id: 2
         },
         {
           id: 15,
@@ -168,7 +154,6 @@ exports.seed = function(knex, Promise) {
           inseam_in: null,
           neck_in: null,
           shoe_size_cm: null,
-          clothing_type_id: 2
         },
         {
           id: 16,
@@ -179,7 +164,6 @@ exports.seed = function(knex, Promise) {
           inseam_in: null,
           neck_in: null,
           shoe_size_cm: null,
-          clothing_type_id: 2
         },
         {
           id: 17,
@@ -190,7 +174,6 @@ exports.seed = function(knex, Promise) {
           inseam_in: null,
           neck_in: null,
           shoe_size_cm: null,
-          clothing_type_id: 2
         },
       ]);
     });
