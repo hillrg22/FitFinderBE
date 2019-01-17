@@ -17,8 +17,7 @@ router.get('/', (req,res,next) =>{
       .select(
         'clothing_article.id AS clothing_article_id',
         'clothing_article.name AS article_name',
-        'clothing_article.img_url',
-        'brand.name AS brand_name',
+        'clothing_article.img_url'
       )
       .innerJoin('brand', 'clothing_article.brand_id', 'brand.id' )
       .then(article =>{
